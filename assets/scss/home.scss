@@ -1,9 +1,7 @@
 body{
-    // background: url("../images/c6bank/hero-bg-xs.webp") no-repeat;
-    // background-size: contain;
     width: 100%;
-    // height: calc(100vh - 100px - 100px);
     display: flex;
+    flex-direction: column;
     & > header {
         position: fixed;
         top:0;
@@ -20,6 +18,8 @@ body{
             > ul{
                 margin: 0;
                 display: flex;
+                justify-content: space-around;
+
                 > li{
                     list-style: none;
                     margin-right: 20px;
@@ -31,29 +31,40 @@ body{
                 }
             }
         }
+
+        &.footer-link-a{
+            >nav > ul > li > a{
+                color: #fff;
+            }
+        }
     }
 }
 
 button.disabled{
     background: none;
-    border: solid 0.5 rgba( 36, 36,36, 0.8);
+    border: solid 1px hsla(0, 0%, 26%, 0.5);
+    color: hsl(0, 0%, 26%);
 }
 button.disabled:hover{
-    background: rgba( 36, 36,36, 0.8);;
+    background: transparent;
+    
 }
 button{
     width: 290px;
     height: 40px;
     border: none;
     text-transform: uppercase;
-    color: #333;
     background: linear-gradient(150deg, #ffe45c 0%, #ffc900 100%);
+    color: #242424;
     font-size: 0.8em;
     border-radius: 20px;
 }
 button:hover{
     background: linear-gradient(150deg, #ffe978 0%, #fbd033 100%);
     box-shadow: 0px 2px 4px -1px rgba(0,0,0,0.5);
+}
+.top-button{
+    margin-left: 100px;
 }
 .jss4 .jss6{
     fill: hsla(0, 0%, 14%, 1);
@@ -104,7 +115,7 @@ button:hover{
             span {
                 width: fit-content;
                 display: inline-block; 
-                background: 006d8f;
+                background: #006d8f;
                 padding: 0.5% 2%;
                 margin-right: 8px;
                 border-radius: 25px;
