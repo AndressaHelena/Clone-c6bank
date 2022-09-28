@@ -13,13 +13,16 @@ body{
         align-items: center;
         background: #fff;
         transition-duration: 0.5;
+        & > .logo{
+            margin-right: 6%;
+        }
         > nav{
             width: 60%;
+            justify-self: start;
             > ul{
-                margin: 0;
                 display: flex;
+                padding: 0;
                 justify-content: space-around;
-
                 > li{
                     list-style: none;
                     margin-right: 20px;
@@ -27,6 +30,7 @@ body{
                         text-decoration: none;
                         color: #222;
                         font-weight: bold;
+
                     }
                 }
             }
@@ -39,6 +43,7 @@ body{
         }
     }
 }
+
 
 button.disabled{
     background: none;
@@ -81,13 +86,13 @@ button:hover{
     background-size: contain;
     
     .destak{
-        width: 40%;
+        width: 45%;
         height: 50vh;
         position: absolute;
         bottom: 10%;
-        left: 5%;
+        left: 2%;
         > h1 {
-            font-size: 3em;
+            font-size: 3.5em;
             line-height: 1em;
             font-weight: 300;
             margin-bottom: 5%;
